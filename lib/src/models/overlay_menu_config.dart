@@ -1,5 +1,5 @@
 // src/models/overlay_menu_config.dart
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:quick_action_menu/src/enums/menu_overlay_horizontal_alignment.dart'; // Assuming this enum exists
 import 'package:quick_action_menu/src/enums/sticky_menu_behavior.dart'; // New import
 

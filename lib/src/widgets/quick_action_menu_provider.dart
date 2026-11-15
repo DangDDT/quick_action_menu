@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:quick_action_menu/src/widgets/quick_action_menu.dart';
 
 /// Provides access to QuickActionMenuState across different context trees,

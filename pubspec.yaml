@@ -13,11 +13,12 @@ topics:
   - animation
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
+  sdk: ">=3.13.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
+  material_ui: ^1.11.0
   meta: ^1.11.0
 
 dev_dependencies:

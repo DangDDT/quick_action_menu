@@ -1,13 +1,12 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:quick_action_menu/src/models/anchor_build_data.dart';
 import 'package:quick_action_menu/src/widgets/quick_action_menu.dart';
 
 /// Signature for a function that builds a placeholder widget for the anchor.
-typedef QuickActionAnchorPlaceholderBuilder =
-    Widget Function(
-      BuildContext context,
-      Size heroSize,
-    );
+typedef QuickActionAnchorPlaceholderBuilder = Widget Function(
+  BuildContext context,
+  Size heroSize,
+);
 
 /// Signature for a function that builds the child widget based on
 /// extracted state.
@@ -15,14 +14,13 @@ typedef QuickActionAnchorPlaceholderBuilder =
 /// The [isExtracted] parameter indicates:
 /// - `true`: Anchor is currently extracted and shown in overlay
 /// - `false`: Anchor is currently in place (not extracted)
-typedef QuickActionAnchorChildBuilder =
-    Widget Function(
-      BuildContext context,
-      // To make it clean and more simple for users
-      // ignore: avoid_positional_boolean_parameters
-      bool isExtracted,
-      Widget? child,
-    );
+typedef QuickActionAnchorChildBuilder = Widget Function(
+  BuildContext context,
+  // To make it clean and more simple for users
+  // ignore: avoid_positional_boolean_parameters
+  bool isExtracted,
+  Widget? child,
+);
 
 /// {@template quick_action_anchor}
 /// A widget that serves as an anchor point for a [QuickActionMenu] overlay.
@@ -43,9 +41,9 @@ class QuickActionAnchor extends StatefulWidget {
     this.placeholderBuilder,
     super.key,
   }) : assert(
-         (child != null) | (childBuilder != null),
-         'One of child or childBuilder must be provided',
-       );
+          (child != null) | (childBuilder != null),
+          'One of child or childBuilder must be provided',
+        );
 
   /// The child widget that will be shown as the anchor in the overlay.
   final Widget? child;

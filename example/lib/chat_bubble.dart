@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:quick_action_menu/quick_action_menu.dart';
 
 class ChatBubble extends StatefulWidget {

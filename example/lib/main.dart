@@ -1,7 +1,7 @@
 import 'package:example/chat_bubble.dart';
 import 'package:example/hovered_slide_menu.dart';
 import 'package:example/menu_builders.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:quick_action_menu/quick_action_menu.dart'; // Your package export
 
 void main() {

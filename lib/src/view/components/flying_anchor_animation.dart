@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// {@template flying_anchor_animation}
 /// Handles the animated "flying" representation of the anchor widget.
