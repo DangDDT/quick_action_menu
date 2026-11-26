@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:quick_action_menu/src/enums/menu_overlay_horizontal_alignment.dart';
 import 'package:quick_action_menu/src/enums/sticky_menu_behavior.dart';
 import 'package:quick_action_menu/src/models/overlay_menu_config.dart';

@@ -27,3 +27,17 @@
 
 ### Added
 - Added example for programmatic control of the menu in the demo app
+
+## [Unreleased]
+
+### Changed
+
+- Widgets now build on `material_ui` instead of the SDK `flutter/material.dart`,
+  so menus render with the host's Material 3 theme. Requires Flutter 3.47+.
+- Added the `material_ui: ^1.11.0` dependency; the example and tests use the
+  same import.
+
+### Unchanged
+
+- The default overlay scrim is still deliberate black at 20% opacity; pass
+  `overlayBackgroundColor` to override it.

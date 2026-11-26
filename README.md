@@ -2,7 +2,7 @@
 
 [![pub package](https://img.shields.io/pub/v/quick_action_menu.svg)](https://pub.dev/packages/quick_action_menu)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Flutter](https://img.shields.io/badge/Flutter-3.32+-blue.svg)](https://flutter.dev)
+[![Flutter](https://img.shields.io/badge/Flutter-3.47+-blue.svg)](https://flutter.dev)
 
 A Flutter package for displaying highly customizable context menus inspired by Telegram and WeChat-style quick action menus. Perfect for chat applications, message bubbles, or any widget that needs contextual actions with smooth "flying" anchor animations and sticky menu behaviors.
 
@@ -83,7 +83,7 @@ flutter pub add quick_action_menu
 Wrap your widget tree with `QuickActionMenu` to enable the overlay system:
 
 ```dart
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:quick_action_menu/quick_action_menu.dart';
 
 void main() => runApp(const MyApp());
@@ -371,7 +371,7 @@ if (menuState.isMenuDisplayed) {
 A complete example is available in the [example](example/) directory.
 
 ```dart
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:quick_action_menu/quick_action_menu.dart';
 
 class ChatScreen extends StatelessWidget {

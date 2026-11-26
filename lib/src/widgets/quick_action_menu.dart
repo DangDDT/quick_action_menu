@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:meta/meta.dart';
 import 'package:quick_action_menu/src/enums/menu_overlay_horizontal_alignment.dart';
 import 'package:quick_action_menu/src/enums/sticky_menu_behavior.dart';
@@ -24,14 +24,14 @@ class QuickActionMenu extends StatefulWidget {
   /// Retrieves the [QuickActionMenuState] from the nearest ancestor
   /// [QuickActionMenu] in the widget tree.
   static QuickActionMenuState of(BuildContext context) {
-    // First try to find via InheritedWidget 
+    // First try to find via InheritedWidget
     // (This should be works in overlay contexts)
     final providerState = QuickActionMenuProvider.maybeOf(context);
     if (providerState != null) {
       return providerState;
     }
 
-    // Fallback 
+    // Fallback
     final state = context.findAncestorStateOfType<QuickActionMenuState>();
     if (state == null) {
       throw FlutterError.fromParts(<DiagnosticsNode>[
